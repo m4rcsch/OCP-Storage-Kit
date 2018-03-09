@@ -11,3 +11,5 @@ RUN unzip /home/root/mongoLoader/master.zip -d /home/root/mongoLoader/
 ENV M2_HOME=/home/root/maven/apache-maven-3.5.3/
 ENV M2=$M2_HOME/bin
 ENV PATH=$M2:$PATH
+WORKDIR /home/root/mongoLoader/POCDriver-master
+RUN mvn clean package
