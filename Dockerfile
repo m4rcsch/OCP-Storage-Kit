@@ -13,4 +13,4 @@ ENV M2=$M2_HOME/bin
 ENV PATH=$M2:$PATH
 WORKDIR /home/root/mongoLoader/POCDriver-master
 RUN mvn clean package
-RUN mongo -uadmin -psuper admin --eval "db.createUser({user: 'arthur',pwd:'dent',roles:['root']})"
+#...finde workaround.. > RUN mongo -uadmin -psuper admin --eval "db.createUser({user: 'arthur',pwd:'dent',roles:['root']})"
